@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataVision - Plataforma de Análise de Dados</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+      <h2 class="logo">📊 DataVision</h2>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li><a href="#">Análises</a></li>
+          <li><a href="#">Upload de Dados</a></li>
+          <li><a href="#">Relatórios</a></li>
+          <li><a href="#">Configurações</a></li>
+        </ul>
+      </nav>
+      <footer>
+        <p>&copy; 2025 DataVision</p>
+      </footer>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <header>
+        <h1>Visão Geral dos Dados</h1>
+        <input type="search" placeholder="🔍 Buscar análises..." />
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total de Registros</h3>
+          <p>1.254.783</p>
+        </div>
+        <div class="card">
+          <h3>Média de Crescimento</h3>
+          <p>12,4%</p>
+        </div>
+        <div class="card">
+          <h3>Última Atualização</h3>
+          <p>30/10/2025</p>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <h2>Gráficos e Tendências</h2>
+        <div class="chart-placeholder">[ Gráfico 1 ]</div>
+        <div class="chart-placeholder">[ Gráfico 2 ]</div>
+      </section>
+
+      <section class="upload">
+        <h2>Envio de Dados</h2>
+        <p>Faça upload de arquivos CSV ou Excel para análise:</p>
+        <form>
+          <input type="file" accept=".csv, .xlsx" />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

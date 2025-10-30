@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+  background-color: #1f2937;
+  color: #fff;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #60a5fa;
+}
+
+.sidebar footer {
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* ==== MAIN CONTENT ==== */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+header input[type="search"] {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+/* ==== CARDS ==== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ==== DASHBOARD ==== */
+.dashboard {
+  margin-bottom: 2rem;
+}
+
+.dashboard h2 {
+  margin-bottom: 1rem;
+}
+
+.chart-placeholder {
+  background: #fff;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  border: 2px dashed #ccc;
+}
+
+/* ==== UPLOAD ==== */
+.upload h2 {
+  margin-bottom: 0.5rem;
+}
+
+.upload form {
+  margin-top: 1rem;
+}
+
+.upload input[type="file"] {
+  margin-right: 1rem;
+}
+
+.upload button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload button:hover {
+  background-color: #2563eb;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
